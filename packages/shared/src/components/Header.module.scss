@@ -1,0 +1,30 @@
+.header {
+  background-color: #AFDAFC;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin-right: 20px;
+}
+
+.link {
+  font-size: 20px;
+  color: #131212;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.linkActive {
+  font-size: 20px;
+  margin: 0 10px;
+  color: green;
+}

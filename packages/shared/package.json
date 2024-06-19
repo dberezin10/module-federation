@@ -1,0 +1,9 @@
+{
+  "name": "@packages/shared",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2"
+  }
+}
