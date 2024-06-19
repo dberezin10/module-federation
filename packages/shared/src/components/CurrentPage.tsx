@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation} from "react-router-dom";
-import { Routes } from "@packages/shared/src/routes/routes";
+import { Routes } from "../routes/routes";
 
 const CurrentPage = () => {
     const { pathname } = useLocation();

@@ -5,7 +5,7 @@ import About from "@/components/About";
 import {Outlet} from "react-router-dom";
 import Header from "@packages/shared/src/components/Header";
 import Footer from "@packages/shared/src/components/Footer";
-import CurrentPage from "host/src/components/CurrentPage";
+import CurrentPage from "@packages/shared/src/components/CurrentPage";
 
 
 
@@ -15,6 +15,7 @@ const App = () => {
         <>
             <Layout>
                 <CurrentPage />
+                {/*aboutsdfsdfs*/}
                 {/*<Outlet />*/}
             </Layout>
         </>

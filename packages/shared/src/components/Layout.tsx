@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./Header";
-import CurrentPage from "host/src/components/CurrentPage";
+
 import {Outlet} from "react-router-dom";
 import Footer from "./Footer";
 

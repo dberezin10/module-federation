@@ -3,7 +3,7 @@ import {createRoot} from "react-dom/client";
 import {RouterProvider} from "react-router-dom";
 import {router} from "@/router/Router";
 
-import './global.scss';
+import '@packages/shared/src/scss/global.scss';
 
 const root = document.getElementById('root');
 
