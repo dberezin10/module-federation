@@ -15,6 +15,7 @@ const App = () => {
         <>
             <Layout>
                 <CurrentPage />
+                <About />
                 {/*aboutsdfsdfs*/}
                 {/*<Outlet />*/}
             </Layout>
