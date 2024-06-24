@@ -3,8 +3,8 @@ import App from "@/components/App";
 
 const routes = [
   {
-    path: '/about',
-    element: <App />,
+    path: '/payment',
+    element: <App/>,
   }
 ]
 

@@ -29,6 +29,14 @@ const Header = () => {
                             About
                         </Link>
                     </li>
+                    <li className={styles.item}>
+                        <Link
+                            to={Routes.payment}
+                            className={Routes.payment === pathname ? styles.linkActive : styles.link}
+                        >
+                            Payment
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

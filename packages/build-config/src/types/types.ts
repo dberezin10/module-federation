@@ -1,21 +1,21 @@
-export interface BuildPaths {
+export interface IPaths {
     entry: string;
     html: string;
     output: string;
     src: string;
 }
 
-export type BuildMode = "development" | "production";
+export type TMode = "development" | "production";
 
-export interface EnvVariables {
-    mode: BuildMode
+export interface IEnvVariables {
+    mode: TMode
     port: number
     analyzer?: boolean;
 }
 
-export interface BuildOptions {
+export interface IWebpackOptions {
     port: number;
-    paths: BuildPaths;
-    mode: BuildMode;
+    paths: IPaths;
+    mode: TMode;
     analyzer?: boolean;
 }

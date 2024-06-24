@@ -5,6 +5,8 @@ import {RouterProvider} from "react-router-dom";
 
 import {router} from "@/router/Router";
 
+import '@packages/shared/src/scss/global.scss';
+
 const root = document.getElementById('root');
 
 if (!root) {

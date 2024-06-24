@@ -1,4 +1,5 @@
 export enum Routes {
     main = '/',
-    about = '/about'
+    about = '/about',
+    payment = '/payment'
 }

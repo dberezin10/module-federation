@@ -1,5 +1,5 @@
 {
-  "name": "shop",
+  "name": "payment",
   "version": "1.0.0",
   "main": "./src/index.ts",
 

@@ -1,27 +1,20 @@
 import path from "path";
 
-import { EnvVariables, BuildPaths, buildWebpack } from '@packages/build-config'
+import { IEnvVariables, IPaths, mainWebpackConfig } from '@packages/build-config'
 import webpack from "webpack";
 
 import PackageJson from './package.json'
 
-export default (env: EnvVariables) => {
-    console.log('env', env)
+export default (env: IEnvVariables) => {
 
-    const isDev = env.mode === "development";
-    const isProd = env.mode === "production";
-
-
-    const paths: BuildPaths = {
+    const paths: IPaths = {
         output: path.resolve(__dirname, 'build'),
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
         html: path.resolve(__dirname, 'public', 'index.html'),
         src: path.resolve(__dirname, 'src'),
     }
 
-
-
-    const config = buildWebpack({
+    const config = mainWebpackConfig({
       port: env.port ?? 5001,
       mode: env.mode ?? "production",
       paths,
@@ -29,10 +22,11 @@ export default (env: EnvVariables) => {
     })
 
     config.plugins.push(new webpack.container.ModuleFederationPlugin({
-      name: 'shop',
+      name: 'payment',
       filename: 'remoteEntry.js',
       exposes: {
         './Router': './src/router/Router.tsx',
+        // './App': './src/components/App.tsx'
       },
       shared: {
         ...PackageJson.dependencies,

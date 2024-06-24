@@ -1,19 +1,12 @@
 import path from "path";
 
-import { EnvVariables, BuildPaths, buildWebpack } from '@packages/build-config'
+import { IEnvVariables, IPaths, mainWebpackConfig } from '@packages/build-config'
 import webpack from "webpack";
 import PackageJson from './package.json'
-import App from "@/components/App";
 
+export default (env: IEnvVariables) => {
 
-export default (env: EnvVariables) => {
-    console.log('env', env)
-
-    const isDev = env.mode === "development";
-    const isProd = env.mode === "production";
-
-
-    const paths: BuildPaths = {
+    const paths: IPaths = {
         output: path.resolve(__dirname, 'build'),
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
         html: path.resolve(__dirname, 'public', 'index.html'),
@@ -21,7 +14,7 @@ export default (env: EnvVariables) => {
     }
 
 
-    const config = buildWebpack({
+    const config = mainWebpackConfig({
       port: env.port ?? 5002,
       mode: env.mode ?? "production",
       paths,
