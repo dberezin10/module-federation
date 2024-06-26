@@ -1,5 +1,5 @@
 export enum Routes {
-    main = '/',
+    host = '/',
     about = '/about',
     payment = '/payment'
 }

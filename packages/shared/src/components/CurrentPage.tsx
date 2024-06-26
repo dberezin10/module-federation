@@ -7,11 +7,12 @@ const CurrentPage = () => {
     console.log('pathname', pathname)
     return (
         <div>
-            <h1>Текущая странца -  {'\u0020'}
-                {pathname === Routes.main && 'Main'}
+            <h1>Переиспользуемый компонент - "CurrentPage"</h1>
+            <h2>Текущая странца -  {'\u0020'}
+                {pathname === Routes.host && 'Host'}
                 {pathname === Routes.about && 'About'}
                 {pathname === Routes.payment && 'Payment'}
-            </h1>
+            </h2>
         </div>
     );
 };

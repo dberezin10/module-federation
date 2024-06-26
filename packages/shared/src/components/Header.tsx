@@ -15,10 +15,10 @@ const Header = () => {
                 <ul className={styles.list}>
                     <li className={styles.item}>
                         <Link
-                            to={Routes.main}
-                            className={Routes.main === pathname ? styles.linkActive : styles.link}
+                            to={Routes.host}
+                            className={Routes.host === pathname ? styles.linkActive : styles.link}
                         >
-                            Main
+                            Host
                         </Link>
                     </li>
                     <li className={styles.item}>
