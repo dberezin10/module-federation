@@ -1,6 +1,6 @@
 import path from "path";
 
-import { IEnvVariables, IPaths, mainWebpackConfig } from '@packages/build-config'
+import { IEnvVariables, IPaths, mainWebpackConfig } from '../../packages/webpack-config'
 import webpack from "webpack";
 
 import PackageJson from './package.json'
