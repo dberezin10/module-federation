@@ -3,7 +3,7 @@ import {Link, useParams, useLocation} from "react-router-dom";
 
 // @ts-ignore
 import styles from './Header.module.scss'
-import {Routes} from "../routes/routes";
+import {Routes} from "../../routes/routes";
 
 const Header = () => {
 
@@ -43,4 +43,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export { Header };

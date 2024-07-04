@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation} from "react-router-dom";
-import { Routes } from "../routes/routes";
+import { Routes } from "../../routes/routes";
 
 const CurrentPage = () => {
     const { pathname } = useLocation();
@@ -17,4 +17,4 @@ const CurrentPage = () => {
     );
 };
 
-export default CurrentPage;
+export { CurrentPage };

@@ -1,23 +1,22 @@
 import React from 'react';
-import Header from "./Header";
-
-import {Outlet} from "react-router-dom";
-import Footer from "./Footer";
 
 // @ts-ignore
 import styles from "./Layout.module.scss";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
+
+
 
 const Layout = ({children}: {children: React.ReactNode}) => {
     return (
         <div className={styles.wrapper}>
-            <Header/>
-            {/*<Outlet />*/}
+            <Header />
             <main className={styles.content}>
                 {children}
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
 
-export default Layout;
+export { Layout };

@@ -16,6 +16,9 @@ export const router = createBrowserRouter([
     path: '/',
     element: <App />,
   },
+  {
+    path: '/about/*'
+  },
   ...aboutRoutes,
   ...paymentRoutes
 ]);

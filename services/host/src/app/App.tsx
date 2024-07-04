@@ -1,8 +1,6 @@
 import React from 'react';
+import { CurrentPage, Layout } from "@packages/shared/src/components";
 
-import CurrentPage from "@packages/shared/src/components/CurrentPage";
-
-import Layout from "@packages/shared/src/components/Layout";
 
 
 const App = () => {
